@@ -1,0 +1,19 @@
+{
+    "name": "notifications/meeting",
+    "description": "Notifications for Meeting Application",
+    "type": "0.0.1",
+    "authors": [
+        {
+            "name": "APosnov",
+            "email": "aposnov@cs-cart.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Notifier\\": "src/",
+            "Settings\\": "src/Settings/"
+        }
+    }
+}
