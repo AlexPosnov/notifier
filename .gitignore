@@ -1,0 +1,5 @@
+/vendor/
+composer.json
+/src/Settings/admin_settings.php
+composer.lock
+.idea
