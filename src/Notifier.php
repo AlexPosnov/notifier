@@ -5,7 +5,6 @@ namespace Notifier;
 use Settings\AdminNotification;
 use Symfony\Component\Dotenv\Dotenv;
 use Mail\Mail;
-use Logs\LogWriter;
 
 class Notifier
 

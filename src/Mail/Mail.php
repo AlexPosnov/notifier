@@ -17,7 +17,7 @@ class Mail
         $mailer = new Mailer($transport);
         $mailer->send($this->createMail($from, $to, $theme, $text));
         $date = new \DateTime();
-        new Log(sprintf('Mail from: %s was sent to: %s with theme: %s and text %s in %s', $from, $to, $theme, $text, $date->format('Y-m-d H:i:s')));
+        new LogWriter('info', sprintf('Mail from: %s was sent to: %s with theme: %s and text %s in %s', $from, $to, $theme, $text, $date->format('Y-m-d H:i:s')));
     }
 
     private function createMail($from, $to, $theme, $text)
